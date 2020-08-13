@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+body {
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 1.8rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: aliceblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.left {
+  flex: 0.9;
+}
+
+.right {
   display: flex;
   flex-direction: column;
+}
+
+.right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.graph {
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.stats {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.MuiSelect-selectMenu {
+  margin-right: 10px !important;
+  font-weight: 700 !important;
+  background-color: grey !important;
+  outline: none !important;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(110,107,110,1) !important;
+  -moz-box-shadow: 2px 2px 2px 0px rgba(110,107,110,1) !important;
+  box-shadow:2px 2px 2px 0px rgba(110,107,110,1) !important;
+}
+.MuiSelect-outlined.MuiSelect-outlined {
+  outline: none !important;
+}
+
+.MuiCard-root {
+  overflow: hidden;
+  margin-top: 20px !important;
+  background-color: #ccffe6 !important;
+}
+
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
   }
 }
